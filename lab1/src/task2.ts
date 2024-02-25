@@ -8,7 +8,7 @@
 // If a string contains all repeating characters,
 // it should return an empty string ("") or None -- see sample tests.
 
-function first_non_repeating_letter(str: string): string {
+function firstNonRepeatingLetter(str: string): string {
     const charCount = new Map<string, number>();
 
     for (const char of str.toLowerCase()) {
@@ -24,8 +24,8 @@ function first_non_repeating_letter(str: string): string {
     return "";
 }
 
-console.log(first_non_repeating_letter("stress"));
-console.log(first_non_repeating_letter("sTreSS"));
-console.log(first_non_repeating_letter("aabbc"));
-console.log(first_non_repeating_letter(""));
-console.log(first_non_repeating_letter("aa"));
+console.log(firstNonRepeatingLetter("stress"));
+console.log(firstNonRepeatingLetter("sTreSS"));
+console.log(firstNonRepeatingLetter("aabbc"));
+console.log(firstNonRepeatingLetter(""));
+console.log(firstNonRepeatingLetter("aa"));

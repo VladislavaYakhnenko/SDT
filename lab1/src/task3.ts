@@ -6,7 +6,7 @@
 
 const DIGIT_NUMBER = 10;
 
-function digital_root(num: number): number {
+function digitalRoot(num: number): number {
     if (num < DIGIT_NUMBER) {
         return num;
     }
@@ -15,10 +15,10 @@ function digital_root(num: number): number {
 
     const sum = digits.reduce((acc, digit) => acc + digit, 0);
 
-    return digital_root(sum);
+    return digitalRoot(sum);
 }
 
-console.log(digital_root(16));
-console.log(digital_root(942));
-console.log(digital_root(132189));
-console.log(digital_root(493193));
+console.log(digitalRoot(16));
+console.log(digitalRoot(942));
+console.log(digitalRoot(132189));
+console.log(digitalRoot(493193));

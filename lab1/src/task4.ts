@@ -2,7 +2,7 @@
 // there is a number target = 5.
 // Count the number of pairs in the array, the sum of which will give target
 
-function count_pairs_with_sum(arr: number[], target: number): number {
+function countPairsWithSum(arr: number[], target: number): number {
     const complementaryNumbers = new Set<number>();
     let count = 0;
 
@@ -19,4 +19,4 @@ function count_pairs_with_sum(arr: number[], target: number): number {
 
 const arr: number[] = [1, 3, 6, 2, 2, 0, 4, 5];
 const target = 5;
-console.log(count_pairs_with_sum(arr, target));
+console.log(countPairsWithSum(arr, target));

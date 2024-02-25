@@ -9,7 +9,7 @@
 // Complete the function that takes an unsigned 32-bit number
 // and returns a string representation of its IPv4 address.
 
-function int_to_ipv4(num: number): string {
+function intToIpv4(num: number): string {
     return [
         num >> 24 & 255,
         num >> 16 & 255,
@@ -18,6 +18,6 @@ function int_to_ipv4(num: number): string {
     ].join('.');
 }
 
-console.log(int_to_ipv4(2149583361));
-console.log(int_to_ipv4(32));
-console.log(int_to_ipv4(0));
+console.log(intToIpv4(2149583361));
+console.log(intToIpv4(32));
+console.log(intToIpv4(0));
